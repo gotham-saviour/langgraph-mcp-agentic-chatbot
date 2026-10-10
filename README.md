@@ -197,18 +197,6 @@ Tests cover:
 
 ---
 
-## 💼 Resume & Portfolio Summary Points
-
-If you are featuring this project on your resume, LinkedIn, or portfolio, here are tailored, impactful bullet points:
-
-> - **Architected & Deployed Autonomous Agentic Chatbot:** Built a stateful multi-agent system utilizing **LangGraph StateGraph**, **Google Gemini 2.5**, and **Streamlit**, featuring real-time token streaming and dynamic multi-threaded tool orchestration.
-> - **Model Context Protocol (MCP) Integration:** Engineered out-of-process tool calling via **FastMCP** over standard I/O (stdio) alongside local search and arithmetic tools, enabling modular, protocol-compliant agent extension.
-> - **Production Asynchronous Infrastructure:** Designed an async-to-sync concurrency bridge with background event loop threads and thread-safe queues to integrate LangGraph's asynchronous generator (`astream`) into Streamlit without blocking UI reactivity.
-> - **Stateful Session Checkpointing:** Implemented persistent conversation branching and thread recovery using **AsyncSqliteSaver**, enabling fault-tolerant session resumption across system reboots.
-> - **Production-Grade Engineering & DevOps:** Containerized with **Docker** / **Docker Compose**, authored unit test suites, structured CI pipelines with **GitHub Actions**, and established strict security standards with environment-driven secret isolation.
-
----
-
 ## 📜 License
 
 Distributed under the [MIT License](LICENSE). Copyright &copy; 2026 Bhavesh Srivastava.
