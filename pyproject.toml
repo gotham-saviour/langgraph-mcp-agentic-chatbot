@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langgraph-mcp-agentic-chatbot"
+version = "1.0.0"
+description = "Production-grade asynchronous Agentic Chatbot powered by LangGraph, Model Context Protocol (MCP), and Google Gemini."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Bhavesh Srivastava", email = "bhaveshs11@gmail.com" }
+]
+keywords = [
+    "langgraph",
+    "langchain",
+    "model-context-protocol",
+    "mcp",
+    "gemini",
+    "streamlit",
+    "agentic-ai",
+    "llm",
+    "autonomous-agents"
+]
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-core>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-google-genai>=2.0.0",
+    "langchain-mcp-adapters>=0.1.0",
+    "langgraph>=0.2.0",
+    "langgraph-checkpoint-sqlite>=2.0.0",
+    "mcp>=1.0.0",
+    "streamlit>=1.38.0",
+    "aiosqlite>=0.20.0",
+    "python-dotenv>=1.0.0",
+    "duckduckgo-search>=6.0.0",
+    "requests>=2.31.0",
+    "pydantic>=2.7.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.3.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
